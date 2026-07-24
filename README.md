@@ -10,9 +10,24 @@ My work emphasizes transparent processing, quality control, cross-software valid
 
 | Modality | Project | Main tools | Repository |
 |---|---|---|---|
+| Diffusion MRI | Preprocessing, DTI, CSD, tractography, SIFT, and quantitative QC | MRtrix3, FSL Eddy | [View project](https://github.com/andraderenew/diffusion-mri_mrtrix3_fsl_single_subject) |
 | Task fMRI | Auditory first-level analysis and cross-software replication | SPM25, FSL FEAT | [View project](https://github.com/andraderenew/fmri-task_spm_firstlevel_auditory) |
 | MEG | Median-nerve ERFs, source reconstruction, and time-frequency analysis | Brainstorm, dSPM, Morlet wavelets | [View project](https://github.com/andraderenew/meg_erfs-sources_brainstorm_median-nerve) |
 | Structural MRI | Tissue segmentation, quality control, global volumes, and VBM preparation | CAT26, SPM25, MATLAB | [View project](https://github.com/andraderenew/structural-mri_cat12_single_subject) |
+
+### Diffusion MRI — MRtrix3 and FSL
+
+Reproducible single-subject diffusion MRI workflow using public MPI-LEMON data.
+
+- MP-PCA denoising and Gibbs-ringing correction
+- Motion, eddy-current, and outlier correction with FSL Eddy
+- Diffusion tensor fitting with FA, MD, AD, and RD maps
+- Single-shell constrained spherical deconvolution
+- Probabilistic iFOD2 whole-brain tractography
+- SIFT filtering and track-density imaging
+- Automated quality-control figures and quantitative summaries
+
+[Open the diffusion MRI project](https://github.com/andraderenew/diffusion-mri_mrtrix3_fsl_single_subject)
 
 ### Task fMRI — SPM25 and FSL FEAT
 
@@ -66,6 +81,7 @@ Python · MATLAB · Bash · Git · BIDS · statistical modelling · scientific v
 ## Research interests
 
 - Structural and functional brain connectivity
+- Diffusion MRI and tractography
 - Reproducible neuroimaging
 - Multimodal integration
 - Neuroimaging quality control
