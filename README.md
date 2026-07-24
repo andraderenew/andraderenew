@@ -14,6 +14,7 @@ My work emphasizes transparent processing, quality control, cross-software valid
 | Task fMRI | Auditory first-level analysis and cross-software replication | SPM25, FSL FEAT | [View project](https://github.com/andraderenew/fmri-task_spm_firstlevel_auditory) |
 | MEG | Median-nerve ERFs, source reconstruction, and time-frequency analysis | Brainstorm, dSPM, Morlet wavelets | [View project](https://github.com/andraderenew/meg_erfs-sources_brainstorm_median-nerve) |
 | Structural MRI | Tissue segmentation, quality control, global volumes, and VBM preparation | CAT26, SPM25, MATLAB | [View project](https://github.com/andraderenew/structural-mri_cat12_single_subject) |
+| Structural MRI | Cortical reconstruction, morphometry, regional statistics, and Freeview QC | FreeSurfer 7.4.1 | [View project](https://github.com/andraderenew/structural-mri_freesurfer_single_subject) |
 
 ### Diffusion MRI — MRtrix3 and FSL
 
@@ -61,9 +62,20 @@ Single-subject T1-weighted structural MRI workflow.
 - Global tissue-volume extraction
 - Preparation of smoothed grey matter for VBM
 
+### Structural MRI — FreeSurfer
+
+Single-subject cortical reconstruction and morphometry using OpenNeuro ds000114.
+
+- Complete `recon-all` cortical reconstruction
+- Subcortical and global volumetric statistics
+- Cortical thickness, area, and volume by Desikan–Killiany region
+- Coronal, sagittal, and axial Freeview quality-control figures
+- Reproducible Ubuntu workflow with FreeSurfer 7.4.1
+
+[Open the FreeSurfer project](https://github.com/andraderenew/structural-mri_freesurfer_single_subject)
+
 ## Current projects
 
-- [FreeSurfer single-subject cortical reconstruction](https://github.com/andraderenew/structural-mri_freesurfer_single_subject)
 - [Resting-state functional connectivity and graph analysis](https://github.com/andraderenew/fmri-rest_fsl-graphs_braph_adhd200-preproc)
 
 These repositories are listed as work in progress until their analyses, documentation, and final outputs are complete.
