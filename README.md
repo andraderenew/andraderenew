@@ -84,7 +84,7 @@ Single-subject cortical reconstruction and morphometry using OpenNeuro ds000114.
 
 ## Portfolio scaffolds
 
-These repositories are archived and citable, but their current README files describe planned workflows rather than completed scientific analyses.
+These repositories describe planned or scaffold workflows rather than completed scientific analyses. A Zenodo DOI is added only after a completed, quality-controlled release.
 
 | Modality | Planned workflow | Repository | Zenodo |
 |---|---|---|---|
@@ -92,6 +92,7 @@ These repositories are archived and citable, but their current README files desc
 | Structural MRI | CAT12 versus FreeSurfer morphometry agreement on OASIS-1 | [View project](https://github.com/andraderenew/structural-mri_cat12-vs-freesurfer_oasis1) | [10.5281/zenodo.21650518](https://doi.org/10.5281/zenodo.21650518) |
 | EEG | ERPs and time-frequency analysis with EEGLAB and FieldTrip | [View project](https://github.com/andraderenew/eeg_erps-tf_eeglab-fieldtrip_sternberg) | [10.5281/zenodo.21650530](https://doi.org/10.5281/zenodo.21650530) |
 | EEG | LORETA/eLORETA source imaging and Brainstorm PTE/dPTE connectivity | [View project](https://github.com/andraderenew/eeg_sources-connectivity_loreta-brainstorm_pte) | [10.5281/zenodo.21650521](https://doi.org/10.5281/zenodo.21650521) |
+| PET | FDG PET static-image construction, SUVR, PETPVE12 PVC, and resolution-sensitivity analysis on OpenNeuro ds002898 | [View project](https://github.com/andraderenew/pet_fdg-suvr-pvc_spm-petpve12_openneuro-ds002898) | Pending completed release |
 
 ## Technical toolkit
 
