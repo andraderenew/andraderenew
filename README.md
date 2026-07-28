@@ -123,3 +123,5 @@ Python · MATLAB · Bash · Git · BIDS · statistical modelling · scientific v
 ---
 
 Raw neuroimaging data are generally excluded from the repositories. Each completed project documents its data source, processing decisions, software environment, outputs, and limitations.
+
+<!-- profile-refresh: 2026-07-28T19:05:00+02:00 -->
