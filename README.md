@@ -8,13 +8,16 @@ My work emphasizes transparent processing, quality control, cross-software valid
 
 ## Featured completed projects
 
-| Modality | Project | Main tools | Repository |
-|---|---|---|---|
-| Diffusion MRI | Preprocessing, DTI, CSD, tractography, SIFT, and quantitative QC | MRtrix3, FSL Eddy | [View project](https://github.com/andraderenew/diffusion-mri_mrtrix3_fsl_single_subject) |
-| Task fMRI | Auditory first-level analysis and cross-software replication | SPM25, FSL FEAT | [View project](https://github.com/andraderenew/fmri-task_spm_firstlevel_auditory) |
-| MEG | Median-nerve ERFs, source reconstruction, and time-frequency analysis | Brainstorm, dSPM, Morlet wavelets | [View project](https://github.com/andraderenew/meg_erfs-sources_brainstorm_median-nerve) |
-| Structural MRI | Tissue segmentation, quality control, global volumes, and VBM preparation | CAT26, SPM25, MATLAB | [View project](https://github.com/andraderenew/structural-mri_cat12_single_subject) |
-| Structural MRI | Cortical reconstruction, morphometry, regional statistics, and Freeview QC | FreeSurfer 7.4.1 | [View project](https://github.com/andraderenew/structural-mri_freesurfer_single_subject) |
+| Modality | Project | Main tools | Repository | Zenodo |
+|---|---|---|---|---|
+| Diffusion MRI | Preprocessing, DTI, CSD, tractography, SIFT, and quantitative QC | MRtrix3, FSL Eddy | [View project](https://github.com/andraderenew/diffusion-mri_mrtrix3_fsl_single_subject) | [10.5281/zenodo.21650417](https://doi.org/10.5281/zenodo.21650417) |
+| Task fMRI | Auditory first-level analysis and cross-software replication | SPM25, FSL FEAT | [View project](https://github.com/andraderenew/fmri-task_spm_firstlevel_auditory) | [10.5281/zenodo.21650414](https://doi.org/10.5281/zenodo.21650414) |
+| Resting-state fMRI | Functional connectomics, graph analysis, hubs, and BRAPH-ready exports | Nilearn, NetworkX, FSL, BRAPH-ready outputs | [View project](https://github.com/andraderenew/fmri-rest_fsl-graphs_braph_adhd200-preproc) | [10.5281/zenodo.21650416](https://doi.org/10.5281/zenodo.21650416) |
+| MEG | Median-nerve ERFs, dSPM source reconstruction, and time-frequency analysis | Brainstorm, dSPM, Morlet wavelets | [View project](https://github.com/andraderenew/meg_erfs-sources_brainstorm_median-nerve) | [10.5281/zenodo.21650415](https://doi.org/10.5281/zenodo.21650415) |
+| Structural MRI | Tissue segmentation, quality control, global volumes, and VBM preparation | CAT26, SPM25, MATLAB | [View project](https://github.com/andraderenew/structural-mri_cat12_single_subject) | [10.5281/zenodo.21650422](https://doi.org/10.5281/zenodo.21650422) |
+| Structural MRI | Cortical reconstruction, morphometry, regional statistics, and Freeview QC | FreeSurfer 7.4.1 | [View project](https://github.com/andraderenew/structural-mri_freesurfer_single_subject) | [10.5281/zenodo.21650423](https://doi.org/10.5281/zenodo.21650423) |
+
+## Completed workflow highlights
 
 ### Diffusion MRI — MRtrix3 and FSL
 
@@ -28,8 +31,6 @@ Reproducible single-subject diffusion MRI workflow using public MPI-LEMON data.
 - SIFT filtering and track-density imaging
 - Automated quality-control figures and quantitative summaries
 
-[Open the diffusion MRI project](https://github.com/andraderenew/diffusion-mri_mrtrix3_fsl_single_subject)
-
 ### Task fMRI — SPM25 and FSL FEAT
 
 Single-subject analysis of the classic SPM Auditory dataset, implemented independently in SPM25 and FSL FEAT.
@@ -39,7 +40,17 @@ Single-subject analysis of the classic SPM Auditory dataset, implemented indepen
 - First-level GLM
 - Statistical maps and cluster tables
 - Cross-software comparison
-- DOI: [10.5281/zenodo.17715106](https://doi.org/10.5281/zenodo.17715106)
+
+### Resting-state fMRI — Functional connectomics and graph analysis
+
+Ten-subject ADHD-200 preprocessed resting-state workflow using the Schaefer-100 atlas.
+
+- Nuisance regression and temporal filtering
+- Subject-level Pearson connectivity matrices
+- Fisher-z group averaging
+- Minimum-spanning-tree plus 15% density graph construction
+- NetworkX graph metrics, communities, hubs, and small-world analysis
+- BRAPH-ready matrix and label exports
 
 ### MEG — Brainstorm median-nerve analysis
 
@@ -49,7 +60,6 @@ Reproduction of the Brainstorm median-nerve workflow.
 - Early somatosensory topography at approximately 20 ms
 - Minimum-norm dSPM source reconstruction
 - Morlet time-frequency analysis from 4 to 80 Hz
-- DOI: [10.5281/zenodo.17715113](https://doi.org/10.5281/zenodo.17715113)
 
 ### Structural MRI — CAT26 and SPM25
 
@@ -67,18 +77,21 @@ Single-subject T1-weighted structural MRI workflow.
 Single-subject cortical reconstruction and morphometry using OpenNeuro ds000114.
 
 - Complete `recon-all` cortical reconstruction
+- Parallel execution with `-openmp 8`
 - Subcortical and global volumetric statistics
 - Cortical thickness, area, and volume by Desikan–Killiany region
 - Coronal, sagittal, and axial Freeview quality-control figures
-- Reproducible Ubuntu workflow with FreeSurfer 7.4.1
 
-[Open the FreeSurfer project](https://github.com/andraderenew/structural-mri_freesurfer_single_subject)
+## Portfolio scaffolds
 
-## Current projects
+These repositories are archived and citable, but their current README files describe planned workflows rather than completed scientific analyses.
 
-- [Resting-state functional connectivity and graph analysis](https://github.com/andraderenew/fmri-rest_fsl-graphs_braph_adhd200-preproc)
-
-These repositories are listed as work in progress until their analyses, documentation, and final outputs are complete.
+| Modality | Planned workflow | Repository | Zenodo |
+|---|---|---|---|
+| Diffusion MRI | FSL DTIFIT tutorial with optional TOPUP/EDDY, FA/MD maps, and ROI summaries | [View project](https://github.com/andraderenew/dti_fsl-dtifit_tutorial) | [10.5281/zenodo.21650517](https://doi.org/10.5281/zenodo.21650517) |
+| Structural MRI | CAT12 versus FreeSurfer morphometry agreement on OASIS-1 | [View project](https://github.com/andraderenew/structural-mri_cat12-vs-freesurfer_oasis1) | [10.5281/zenodo.21650518](https://doi.org/10.5281/zenodo.21650518) |
+| EEG | ERPs and time-frequency analysis with EEGLAB and FieldTrip | [View project](https://github.com/andraderenew/eeg_erps-tf_eeglab-fieldtrip_sternberg) | [10.5281/zenodo.21650530](https://doi.org/10.5281/zenodo.21650530) |
+| EEG | LORETA/eLORETA source imaging and Brainstorm PTE/dPTE connectivity | [View project](https://github.com/andraderenew/eeg_sources-connectivity_loreta-brainstorm_pte) | [10.5281/zenodo.21650521](https://doi.org/10.5281/zenodo.21650521) |
 
 ## Technical toolkit
 
