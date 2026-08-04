@@ -16,6 +16,7 @@ My work emphasizes transparent processing, quality control, cross-software valid
 | MEG | Median-nerve ERFs, dSPM source reconstruction, and time-frequency analysis | Brainstorm, dSPM, Morlet wavelets | [View project](https://github.com/andraderenew/meg_erfs-sources_brainstorm_median-nerve) | [10.5281/zenodo.21650415](https://doi.org/10.5281/zenodo.21650415) |
 | Structural MRI | Tissue segmentation, quality control, global volumes, and VBM preparation | CAT26, SPM25, MATLAB | [View project](https://github.com/andraderenew/structural-mri_cat12_single_subject) | [10.5281/zenodo.21650422](https://doi.org/10.5281/zenodo.21650422) |
 | Structural MRI | Cortical reconstruction, morphometry, regional statistics, and Freeview QC | FreeSurfer 7.4.1 | [View project](https://github.com/andraderenew/structural-mri_freesurfer_single_subject) | [10.5281/zenodo.21650423](https://doi.org/10.5281/zenodo.21650423) |
+| PET | Dynamic FDG PET, SUVR, PETPVE12 PVC, regional analysis, and PSF sensitivity | FSL MCFLIRT, SPM12, PETPVE12 | [View project](https://github.com/andraderenew/pet_fdg-suvr-pvc_spm-petpve12_openneuro-ds002898) | Pending Zenodo integration repair |
 
 ## Completed workflow highlights
 
@@ -82,6 +83,19 @@ Single-subject cortical reconstruction and morphometry using OpenNeuro ds000114.
 - Cortical thickness, area, and volume by Desikan–Killiany region
 - Coronal, sagittal, and axial Freeview quality-control figures
 
+### PET — FDG SUVR and PETPVE12 partial-volume correction
+
+Completed, quality-controlled single-subject research portfolio demonstration using public OpenNeuro dataset ds002898, subject sub-01.
+
+- 225 dynamic FDG PET frames selected from approximately 30 to 90 minutes
+- 2.8 mm isotropic resampling and FSL MCFLIRT motion correction
+- Static PET construction, SPM12 tissue segmentation, and PET-to-T1 coregistration
+- PETPVE12 Müller–Gärtner partial-volume correction at nominal 4, 5, 6, and 8 mm PSF values
+- Bilateral cerebellar-cortex SUVR and Desikan–Killiany regional summaries
+- 84 primary grey-matter ROIs with median PSF CV 1.488% and maximum PSF CV 7.116%
+- Final workflow validation passed
+- Research portfolio demonstration only; not clinical or diagnostic software
+
 ## Portfolio scaffolds
 
 These repositories describe planned or scaffold workflows rather than completed scientific analyses. A Zenodo DOI is added only after a completed, quality-controlled release.
@@ -92,13 +106,12 @@ These repositories describe planned or scaffold workflows rather than completed 
 | Structural MRI | CAT12 versus FreeSurfer morphometry agreement on OASIS-1 | [View project](https://github.com/andraderenew/structural-mri_cat12-vs-freesurfer_oasis1) | [10.5281/zenodo.21650518](https://doi.org/10.5281/zenodo.21650518) |
 | EEG | ERPs and time-frequency analysis with EEGLAB and FieldTrip | [View project](https://github.com/andraderenew/eeg_erps-tf_eeglab-fieldtrip_sternberg) | [10.5281/zenodo.21650530](https://doi.org/10.5281/zenodo.21650530) |
 | EEG | LORETA/eLORETA source imaging and Brainstorm PTE/dPTE connectivity | [View project](https://github.com/andraderenew/eeg_sources-connectivity_loreta-brainstorm_pte) | [10.5281/zenodo.21650521](https://doi.org/10.5281/zenodo.21650521) |
-| PET | FDG PET static-image construction, SUVR, PETPVE12 PVC, and resolution-sensitivity analysis on OpenNeuro ds002898 | [View project](https://github.com/andraderenew/pet_fdg-suvr-pvc_spm-petpve12_openneuro-ds002898) | Pending completed release |
 
 ## Technical toolkit
 
 **Neuroimaging**
 
-SPM · FSL/FEAT · FreeSurfer · CAT · Brainstorm · MRtrix3 · BRAPH · EEGLAB · FieldTrip
+SPM · FSL/FEAT · FreeSurfer · CAT · Brainstorm · MRtrix3 · PETPVE12 · BRAPH · EEGLAB · FieldTrip
 
 **Programming and reproducibility**
 
@@ -125,4 +138,4 @@ Python · MATLAB · Bash · Git · BIDS · statistical modelling · scientific v
 
 Raw neuroimaging data are generally excluded from the repositories. Each completed project documents its data source, processing decisions, software environment, outputs, and limitations.
 
-<!-- profile-refresh: 2026-07-28T19:05:00+02:00 -->
+<!-- profile-refresh: 2026-08-04T18:22:00+02:00 -->
