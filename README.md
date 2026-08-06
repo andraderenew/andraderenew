@@ -14,6 +14,7 @@ My work emphasizes transparent processing, quality control, cross-software valid
 | Task fMRI | Auditory first-level analysis and cross-software replication | SPM25, FSL FEAT | [View project](https://github.com/andraderenew/fmri-task_spm_firstlevel_auditory) | [10.5281/zenodo.21650414](https://doi.org/10.5281/zenodo.21650414) |
 | Resting-state fMRI | Functional connectomics, graph analysis, hubs, and BRAPH-ready exports | Nilearn, NetworkX, FSL, BRAPH-ready outputs | [View project](https://github.com/andraderenew/fmri-rest_fsl-graphs_braph_adhd200-preproc) | [10.5281/zenodo.21650416](https://doi.org/10.5281/zenodo.21650416) |
 | MEG | Median-nerve ERFs, dSPM source reconstruction, and time-frequency analysis | Brainstorm, dSPM, Morlet wavelets | [View project](https://github.com/andraderenew/meg_erfs-sources_brainstorm_median-nerve) | [10.5281/zenodo.21650415](https://doi.org/10.5281/zenodo.21650415) |
+| EEG | Group-level ERPs, time-frequency power, and exact paired cluster-permutation statistics | EEGLAB, FieldTrip, MATLAB | [View project](https://github.com/andraderenew/eeg_erps-tf_eeglab-fieldtrip_sternberg) | [10.5281/zenodo.21826210](https://doi.org/10.5281/zenodo.21826210) |
 | Structural MRI | Tissue segmentation, quality control, global volumes, and VBM preparation | CAT26, SPM25, MATLAB | [View project](https://github.com/andraderenew/structural-mri_cat12_single_subject) | [10.5281/zenodo.21650422](https://doi.org/10.5281/zenodo.21650422) |
 | Structural MRI | Cortical reconstruction, morphometry, regional statistics, and Freeview QC | FreeSurfer 7.4.1 | [View project](https://github.com/andraderenew/structural-mri_freesurfer_single_subject) | [10.5281/zenodo.21650423](https://doi.org/10.5281/zenodo.21650423) |
 | PET | Dynamic FDG PET, SUVR, PETPVE12 PVC, regional analysis, and PSF sensitivity | FSL MCFLIRT, SPM12, PETPVE12 | [View project](https://github.com/andraderenew/pet_fdg-suvr-pvc_spm-petpve12_openneuro-ds002898) | Pending Zenodo integration repair |
@@ -62,6 +63,20 @@ Reproduction of the Brainstorm median-nerve workflow.
 - Minimum-norm dSPM source reconstruction
 - Morlet time-frequency analysis from 4 to 80 Hz
 
+### EEG — STERN ERPs and time-frequency analysis
+
+Completed group-level analysis of the EEGLAB STERN tutorial study using EEGLAB and FieldTrip.
+
+- 13 participants, 39 condition-specific datasets, 9,678 epochs, and 20,697 events
+- ERP and 4–30 Hz time-frequency analysis across 69 common scalp channels
+- Primary event-matched contrast: **Memorize − Ignore**
+- Positive ERP cluster from 440–552 ms and negative ERP cluster from 632–760 ms
+- Negative time-frequency cluster spanning 4–26 Hz and 0.00–1.40 s
+- Exact paired cluster tests using all 8,192 possible within-subject permutations
+- Subject-level and leave-one-subject-out robustness checks
+
+![Primary EEG time-frequency contrast](https://raw.githubusercontent.com/andraderenew/eeg_erps-tf_eeglab-fieldtrip_sternberg/main/results/figures/stern_tf_Memorize_minus_Ignore_sensor_average.png)
+
 ### Structural MRI — CAT26 and SPM25
 
 Single-subject T1-weighted structural MRI workflow.
@@ -98,13 +113,12 @@ Completed, quality-controlled single-subject research portfolio demonstration us
 
 ## Portfolio scaffolds
 
-These repositories describe planned or scaffold workflows rather than completed scientific analyses. A Zenodo DOI is added only after a completed, quality-controlled release.
+These repositories describe planned workflows rather than completed scientific analyses. Their Zenodo links are archived scaffold records and should not be interpreted as completed result releases.
 
-| Modality | Planned workflow | Repository | Zenodo |
+| Modality | Planned workflow | Repository | Archived scaffold record |
 |---|---|---|---|
 | Diffusion MRI | FSL DTIFIT tutorial with optional TOPUP/EDDY, FA/MD maps, and ROI summaries | [View project](https://github.com/andraderenew/dti_fsl-dtifit_tutorial) | [10.5281/zenodo.21650517](https://doi.org/10.5281/zenodo.21650517) |
 | Structural MRI | CAT12 versus FreeSurfer morphometry agreement on OASIS-1 | [View project](https://github.com/andraderenew/structural-mri_cat12-vs-freesurfer_oasis1) | [10.5281/zenodo.21650518](https://doi.org/10.5281/zenodo.21650518) |
-| EEG | ERPs and time-frequency analysis with EEGLAB and FieldTrip | [View project](https://github.com/andraderenew/eeg_erps-tf_eeglab-fieldtrip_sternberg) | [10.5281/zenodo.21650530](https://doi.org/10.5281/zenodo.21650530) |
 | EEG | LORETA/eLORETA source imaging and Brainstorm PTE/dPTE connectivity | [View project](https://github.com/andraderenew/eeg_sources-connectivity_loreta-brainstorm_pte) | [10.5281/zenodo.21650521](https://doi.org/10.5281/zenodo.21650521) |
 
 ## Technical toolkit
@@ -138,4 +152,4 @@ Python · MATLAB · Bash · Git · BIDS · statistical modelling · scientific v
 
 Raw neuroimaging data are generally excluded from the repositories. Each completed project documents its data source, processing decisions, software environment, outputs, and limitations.
 
-<!-- profile-refresh: 2026-08-04T18:22:00+02:00 -->
+<!-- profile-refresh: 2026-08-06T18:45:00+02:00 -->
