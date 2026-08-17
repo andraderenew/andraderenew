@@ -117,15 +117,7 @@ Completed, quality-controlled single-subject research portfolio demonstration us
 |---|---|---|---|
 | Structural MRI | CAT26/SPM25 versus FreeSurfer on the same OpenNeuro `ds000114` T1-weighted image | Current descriptive cross-method comparison; no population inference or completed region-by-region agreement claim | [View project](https://github.com/andraderenew/structural-mri_cat26-vs-freesurfer_openneuro-ds000114) |
 
-## Planned portfolio workflow
-
-The repository below remains a planning scaffold and should not be interpreted as a completed scientific analysis.
-
-| Modality | Planned workflow | Repository | Archived scaffold record |
-|---|---|---|---|
-| EEG | LORETA/eLORETA source imaging and Brainstorm PTE/dPTE connectivity | [View project](https://github.com/andraderenew/eeg_sources-connectivity_loreta-brainstorm_pte) | [10.5281/zenodo.21650521](https://doi.org/10.5281/zenodo.21650521) |
-
-Archived historical scaffolds that have been superseded by completed projects are intentionally omitted from the active portfolio presentation.
+Archived historical scaffolds that have been superseded or discontinued are intentionally omitted from the active portfolio presentation.
 
 ## Technical toolkit
 
@@ -158,4 +150,4 @@ Python · MATLAB · Bash · Git · BIDS · statistical modelling · scientific v
 
 Raw neuroimaging data are generally excluded from the repositories. Each completed project documents its data source, processing decisions, software environment, outputs, and limitations.
 
-<!-- profile-refresh: 2026-08-17T14:44:00+02:00 -->
+<!-- profile-refresh: 2026-08-17T14:59:00+02:00 -->
