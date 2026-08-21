@@ -10,13 +10,13 @@ My work emphasizes transparent processing, quality control, cross-software valid
 
 | Modality | Project | Main tools | Repository | Zenodo |
 |---|---|---|---|---|
-| Diffusion MRI | Preprocessing, DTI, CSD, tractography, SIFT, and quantitative QC | MRtrix3, FSL Eddy | [View project](https://github.com/andraderenew/diffusion-mri_mrtrix3_fsl_single_subject) | [10.5281/zenodo.21650417](https://doi.org/10.5281/zenodo.21650417) |
-| Task fMRI | Auditory first-level analysis and cross-software replication | SPM25, FSL FEAT | [View project](https://github.com/andraderenew/fmri-task_spm_firstlevel_auditory) | [10.5281/zenodo.21650414](https://doi.org/10.5281/zenodo.21650414) |
-| Resting-state fMRI | Functional connectomics, graph analysis, hubs, and BRAPH-ready exports | Nilearn, NetworkX, FSL, BRAPH-ready outputs | [View project](https://github.com/andraderenew/fmri-rest_fsl-graphs_braph_adhd200-preproc) | [10.5281/zenodo.21650416](https://doi.org/10.5281/zenodo.21650416) |
-| MEG | Median-nerve ERFs, dSPM source reconstruction, and time-frequency analysis | Brainstorm, dSPM, Morlet wavelets | [View project](https://github.com/andraderenew/meg_erfs-sources_brainstorm_median-nerve) | [10.5281/zenodo.21650415](https://doi.org/10.5281/zenodo.21650415) |
+| Diffusion MRI | Preprocessing, DTI, CSD, tractography, SIFT, and quantitative QC | MRtrix3, FSL Eddy | [View project](https://github.com/andraderenew/diffusion-mri_mrtrix3_fsl_single_subject) | [10.5281/zenodo.21629553](https://doi.org/10.5281/zenodo.21629553) |
+| Task fMRI | Auditory first-level analysis and cross-software replication | SPM25, FSL FEAT | [View project](https://github.com/andraderenew/fmri-task_spm_firstlevel_auditory) | [10.5281/zenodo.17715105](https://doi.org/10.5281/zenodo.17715105) |
+| Resting-state fMRI | Functional connectomics, graph analysis, hubs, and BRAPH-ready exports | Nilearn, NetworkX, FSL, BRAPH-ready outputs | [View project](https://github.com/andraderenew/fmri-rest_fsl-graphs_braph_adhd200-preproc) | [10.5281/zenodo.17715117](https://doi.org/10.5281/zenodo.17715117) |
+| MEG | Median-nerve ERFs, dSPM source reconstruction, and time-frequency analysis | Brainstorm, dSPM, Morlet wavelets | [View project](https://github.com/andraderenew/meg_erfs-sources_brainstorm_median-nerve) | [10.5281/zenodo.17715112](https://doi.org/10.5281/zenodo.17715112) |
 | EEG | Group-level ERPs, time-frequency power, and exact paired cluster-permutation statistics | EEGLAB, FieldTrip, MATLAB | [View project](https://github.com/andraderenew/eeg_erps-tf_eeglab-fieldtrip_sternberg) | [10.5281/zenodo.21826210](https://doi.org/10.5281/zenodo.21826210) |
-| Structural MRI | Tissue segmentation, quality control, global volumes, and VBM preparation | CAT26, SPM25, MATLAB | [View project](https://github.com/andraderenew/structural-mri_cat12_single_subject) | [10.5281/zenodo.21650422](https://doi.org/10.5281/zenodo.21650422) |
-| Structural MRI | Cortical reconstruction, morphometry, regional statistics, and Freeview QC | FreeSurfer 7.4.1 | [View project](https://github.com/andraderenew/structural-mri_freesurfer_single_subject) | [10.5281/zenodo.21650423](https://doi.org/10.5281/zenodo.21650423) |
+| Structural MRI | Tissue segmentation, quality control, global volumes, and VBM preparation | CAT26, SPM25, MATLAB | [View project](https://github.com/andraderenew/structural-mri_cat12_single_subject) | [10.5281/zenodo.21629555](https://doi.org/10.5281/zenodo.21629555) |
+| Structural MRI | Cortical reconstruction, morphometry, regional statistics, and Freeview QC | FreeSurfer 7.4.1 | [View project](https://github.com/andraderenew/structural-mri_freesurfer_single_subject) | [10.5281/zenodo.21629557](https://doi.org/10.5281/zenodo.21629557) |
 | PET | Dynamic FDG PET, SUVR, PETPVE12 PVC, regional analysis, and PSF sensitivity | FSL MCFLIRT, SPM12, PETPVE12 | [View project](https://github.com/andraderenew/pet_fdg-suvr-pvc_spm-petpve12_openneuro-ds002898) | Pending Zenodo integration repair |
 
 ## Completed workflow highlights
@@ -107,7 +107,9 @@ Completed, quality-controlled single-subject research portfolio demonstration us
 - Static PET construction, SPM12 tissue segmentation, and PET-to-T1 coregistration
 - PETPVE12 Müller–Gärtner partial-volume correction at nominal 4, 5, 6, and 8 mm PSF values
 - Bilateral cerebellar-cortex SUVR and Desikan–Killiany regional summaries
-- 84 primary grey-matter ROIs with median PSF CV 1.488% and maximum PSF CV 7.116%
+- 84 predefined primary grey-matter ROIs; 81 form the post hoc QA robustness subset (GM support >=20 voxels)
+- Robust cerebellar-normalized PVC-SUVR PSF CV: median 1.437%, maximum 6.037%
+- Robust pre-normalization PVC-activity PSF CV: median 3.029%, maximum 8.587%
 - Final workflow validation passed
 - Research portfolio demonstration only; not clinical or diagnostic software
 
